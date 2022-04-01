@@ -1,0 +1,65 @@
+.home .title{
+    font: 3rem;
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: center;
+}
+
+main{
+    background-color: #F1FAEE;
+}
+
+.home{
+    border-radius: 0%;
+}
+
+.subtitle{
+    text-align: center;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.mat-card-content > p{
+    width: 50%;
+}
+
+.mat-card-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    height: 35vh;
+}
+
+.logo{
+    width: 150px;
+}
+
+@media screen and (min-width: 500px){
+    .logo{
+        width: 10vw;
+    }
+}
+
+/* ---------------------------------- */
+
+#features{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.imgCard{
+    height: 30vh;
+    transition:  .3s;
+}
+
+.imgCard:hover{
+    transition: transform .3s ease;
+    transform: scale(1.1);
+}
+
+.card{
+    text-align: center;
+    border-radius: 0%;
+    margin: 1rem;
+}

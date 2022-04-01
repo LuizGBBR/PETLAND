@@ -1,0 +1,34 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #F1FAEE;
+}
+
+.logo{
+    height: 3rem;
+}
+
+.buttons{
+    display: flex;
+    gap: 1rem;
+}
+
+.loginBtn{
+    background-color: #A8DADC;
+    color: #1D3557;
+    transition: .2s;
+}
+.loginBtn:hover{
+    background-color: #60bac0;
+    color: #F1FAEE;
+}
+
+.singupBtn{
+    background-color: #1D3557;
+    color: #A8DADC;
+    transition: .2s;
+}
+.singupBtn:hover{
+    background-color: #457B9D;
+    color: #F1FAEE;
+}

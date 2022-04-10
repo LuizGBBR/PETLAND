@@ -1,3 +1,8 @@
+*{
+    box-sizing: border-box;
+}
+
+/* -----------------BANNER----------------- */
 .home .title{
     font: 3rem;
     font-weight: 300;
@@ -19,29 +24,19 @@ main{
     font-size: 1.5rem;
 }
 
-.mat-card-content > p{
-    width: 50%;
-}
-
-.mat-card-content{
+.content{
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    height: 35vh;
+    padding: .5rem;
+    gap: .5rem;
 }
 
-.logo{
-    width: 150px;
+
+.logo > img{
+    width: 20vw;   
 }
 
-@media screen and (min-width: 500px){
-    .logo{
-        width: 10vw;
-    }
-}
-
-/* ---------------------------------- */
+/* -----------------FEATURES-----------------  */
 
 #features{
     display: grid;
@@ -49,7 +44,7 @@ main{
 }
 
 .imgCard{
-    height: 30vh;
+    height: 3rem;
     transition:  .3s;
 }
 
@@ -63,3 +58,24 @@ main{
     border-radius: 0%;
     margin: 1rem;
 }
+
+/* -----------------RESPONSIVE----------------- */
+@media only screen and (max-width: 600px) {
+    body{
+        max-width: 600px;
+    }
+    .home {
+      display: grid;
+      grid-template-areas: "title subtitle" "content";
+    }
+    .logo{
+        display: none;
+    }
+    .content{
+        position: relative;
+        z-index: 1;
+    }
+    #features{
+        display: block;
+    }
+  }

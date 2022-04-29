@@ -4,8 +4,6 @@
 
 .footer{
     background-color: #F1FAEE;
-    position: inherit;
-    bottom: 0;
     display: flex;
     flex-direction: column;
     height: auto;

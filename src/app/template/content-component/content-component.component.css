@@ -44,7 +44,7 @@ main{
 }
 
 .imgCard{
-    height: 3rem;
+    height: 20vh;
     transition:  .3s;
 }
 
